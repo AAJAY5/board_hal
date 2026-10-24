@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "defaultBoard": "esp32_s3_touch_lcd_7",
+  "boards": [
+    {
+      "id": "esp32_s3_touch_lcd_7",
+      "label": "Waveshare ESP32-S3 Touch LCD 7",
+      "display": { "width": 800, "height": 480 },
+      "summary": "7-inch RGB565 · GT911 touch · CH422 expander",
+      "description": "7-inch 800 × 480 RGB565 parallel display with capacitive touch and a CH422G expander.",
+      "cSymbol": "board_esp32_s3_touch_lcd_7",
+      "source": "boards/esp32_s3_touch_lcd_7.c",
+      "soc": "ESP32-S3",
+      "capabilities": ["display", "brightness", "touch"],
+      "specs": [
+        { "label": "SoC", "value": "ESP32-S3" },
+        { "label": "Display", "value": "800 × 480 RGB565" },
+        { "label": "Touch", "value": "GT911" },
+        { "label": "Backlight", "value": "CH422 enable" }
+      ]
+    },
+    {
+      "id": "esp32_s3_jotto_lcd_5",
+      "label": "Jotto ESP32-S3 LCD 5-inch",
+      "display": { "width": 800, "height": 480 },
+      "summary": "5-inch RGB565 · GT911 touch · PWM backlight",
+      "description": "5-inch 800 × 480 RGB565 parallel display with GT911 touch and a PWM backlight on GPIO4.",
+      "cSymbol": "board_esp32_s3_jotto_lcd_5",
+      "source": "boards/esp32_s3_jotto_lcd_5.c",
+      "soc": "ESP32-S3",
+      "capabilities": ["display", "brightness", "touch"],
+      "specs": [
+        { "label": "SoC", "value": "ESP32-S3" },
+        { "label": "Display", "value": "800 × 480 RGB565" },
+        { "label": "Touch", "value": "GT911" },
+        { "label": "Backlight", "value": "GPIO4 PWM" }
+      ]
+    }
+  ]
+}
